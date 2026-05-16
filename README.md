@@ -1,24 +1,24 @@
-# UI Kit Project
+# Проект UI Kit
 
-This project is a UI Kit created as part of a learning exercise. It includes a variety of common UI components that are responsive and styled using the BEM methodology.
+Этот проект представляет собой UI Kit, созданный в рамках учебного задания. Он включает в себя набор общих компонентов пользовательского интерфейса, которые являются адаптивными и стилизованы с использованием методологии БЭМ.
 
-## Project Structure
+## Структура проекта
 
-- `index.html`: The main documentation page for the UI Kit.
-- `scss/`: Contains all the SCSS source files.
-  - `main.scss`: The main SCSS file that imports all other partials.
-  - `variables.scss`: Contains all the variables (colors, fonts, etc.).
-  - `base.scss`: Basic styles, resets, and normalization.
-  - `components/`: Directory for individual component styles.
-- `css/`: This directory will contain the compiled CSS.
+- `index.html`: Основная страница документации для UI Kit.
+- `scss/`: Содержит все исходные файлы SCSS.
+  - `main.scss`: Основной файл SCSS, который импортирует все остальные части.
+  - `variables.scss`: Содержит все переменные (цвета, шрифты и т.д.).
+  - `base.scss`: Базовые стили, сбросы и нормализация.
+  - `components/`: Каталог для стилей отдельных компонентов.
+- `css/`: Этот каталог будет содержать скомпилированный CSS.
 
-## Components
+## Компоненты
 
-The UI Kit includes the following components:
+UI Kit включает в себя следующие компоненты:
 
-- Buttons
-- Inputs
-- Dropdowns
-- Checkboxes and Radio Buttons
-- Cards
-- Navbar
+- Кнопки
+- Поля ввода
+- Выпадающие списки
+- Чекбоксы и радиокнопки
+- Карточки
+- Навигационное меню
