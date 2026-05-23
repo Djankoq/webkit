@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+}
+
+.App.light {
+  background-color: #fff;
+  color: #000;
+}
+
+.App.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+nav {
+  padding: 1rem;
+  background-color: #f0f0f0;
+}
+
+.App.dark nav {
+  background-color: #444;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #007bff;
+}
+
+nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.App.dark nav a {
+  color: #87bfff;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 200px;
+  text-align: left;
+}
+
+.App.dark .card {
+  border-color: #555;
+}
+
+.details-container {
+  padding: 1rem;
+}
+
+.details-container img {
+  max-width: 100%;
+  height: auto;
+}
