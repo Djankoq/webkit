@@ -15,6 +15,8 @@
 nav {
   padding: 1rem;
   background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
 }
 
 .App.dark nav {
@@ -63,4 +65,48 @@ nav a.active {
 .details-container img {
   max-width: 100%;
   height: auto;
+}
+
+.offline-status {
+  background-color: #ffc107;
+  color: #000;
+  padding: 0.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Login Page Styles */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 300px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  flex: 1;
+  text-align: right;
+  min-width: 80px; /* Adjust as needed */
+}
+
+.form-group input {
+  flex: 3;
+  padding: 0.5rem;
+}
+
+.error-message {
+  color: red;
 }
