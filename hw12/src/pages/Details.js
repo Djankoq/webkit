@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect, useContext, memo, useCallback } from 'react';
 import { useParams } from 'react-router-dom';
 import { FavoritesContext } from '../context/FavoritesContext';
 
@@ -27,6 +27,12 @@ function Details() {
       });
   }, [id]);
 
+  const handleAddFavorite = useCallback(() => {
+    if (item) {
+      addFavorite(item);
+    }
+  }, [item, addFavorite]);
+
   if (loading) {
     return <div>Loading...</div>;
   }
@@ -45,9 +51,9 @@ function Details() {
       <p>ID: {item.id}</p>
       <p>{item.body}</p>
       <img src={`https://via.placeholder.com/600/92c952`} alt={item.title} />
-      <button onClick={() => addFavorite(item)}>Add to Favorites</button>
+      <button onClick={handleAddFavorite}>Add to Favorites</button>
     </div>
   );
 }
 
-export default Details;
+export default memo(Details);
